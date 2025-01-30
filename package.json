@@ -1,0 +1,38 @@
+{
+  "name": "@liqd-react/state",
+  "version": "0.0.1",
+  "description": "",
+  "author": "radixxko",
+  "license": "MIT",
+  "main": "dist/state.js",
+  "types": "dist/state.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc",
+    "version": "rm -rf dist && tsc -c && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liqd-react/state.git"
+  },
+  "dependencies": {
+    "@liqd-js/fast-object-hash": "^2.0.2"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^19.0.8",
+    "react": "^19.0.0",
+    "rollup": "^4.32.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  }
+}
